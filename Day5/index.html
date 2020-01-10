@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day5</title>
+    <style>
+      .border {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .button {
+        color: white;
+        background-color: #7f8c8d;
+        box-shadow: none;
+        width: 250px;
+        height: 60px;
+        border-radius: 45px / 45px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .button:hover {
+        background-color: #95a5a6;
+        box-shadow: 2px 2px 2px 2px #999;
+      }
+      .button:hover + .box {
+        transform: rotate(135deg) scale(0.5, 0.5);
+        border: 6px solid black;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="border">
+      <span class="button">
+        I'm a button
+      </span>
+      <img class="box" src="C:\code_challenge\Day5\img\랏소.jpg" />
+    </span>
+  </body>
+</html>
