@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day6</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 200vh;
+        height: 100vh;
+      }
+      .boxp {
+        display: flex;
+        flex-direction: column;
+      }
+      .box1 {
+        width: 200vh;
+        height: 50vh;
+        background-color: #76c4c6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box2 {
+        width: 200vh;
+        height: 50vh;
+        background-color: #1eac9c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 5px;
+      }
+      .circles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: 1s Rotate infinite ease-in-out;
+      }
+
+      .rectangle {
+        width: 10px;
+        height: 40px;
+        background-color: white;
+        margin: 5px;
+        animation: 1s Tall infinite ease-in-out;
+      }
+
+      #rectangle2 {
+        animation-delay: -1.12s;
+      }
+      #rectangle3 {
+        animation-delay: -1.24s;
+      }
+      #rectangle4 {
+        animation-delay: -1.48s;
+      }
+      #rectangle5 {
+        animation-delay: -1.6s;
+      }
+      @keyframes Rotate {
+        0% {
+          transform: none;
+        }
+
+        100% {
+          transform: rotate(0.5turn);
+        }
+      }
+      @keyframes Tall {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: scale(1, 2);
+        }
+        100% {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <span class="boxp">
+      <span class="box1">
+        <span class="circles">
+          <span class="circle" id="circle1"></span>
+          <span class="circle" id="circle2"></span>
+          <span class="circle" id="circle3"></span>
+        </span>
+      </span>
+      <span class="box2">
+        <span class="rectangle" id="rectangle1"></span>
+        <span class="rectangle" id="rectangle2"></span>
+        <span class="rectangle" id="rectangle3"></span>
+        <span class="rectangle" id="rectangle4"></span>
+        <span class="rectangle" id="rectangle5"></span>
+      </span>
+    </span>
+  </body>
+</html>
