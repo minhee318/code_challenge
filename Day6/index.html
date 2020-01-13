@@ -35,7 +35,7 @@
       .circle {
         width: 10px;
         height: 10px;
-        border-radius: 50%;
+        border-radius: 10px;
         background-color: white;
         margin: 5px;
       }
@@ -55,20 +55,23 @@
       }
 
       #rectangle2 {
-        animation-delay: -1.12s;
+        animation-delay: 0.1s;
       }
       #rectangle3 {
-        animation-delay: -1.24s;
+        animation-delay: 0.2s;
       }
       #rectangle4 {
-        animation-delay: -1.48s;
+        animation-delay: 0.3s;
       }
       #rectangle5 {
-        animation-delay: -1.6s;
+        animation-delay: 0.4s;
       }
       @keyframes Rotate {
         0% {
           transform: none;
+        }
+        50% {
+          transform: rotate(0.5turn);
         }
 
         100% {
@@ -77,6 +80,9 @@
       }
       @keyframes Tall {
         0% {
+          transform: none;
+        }
+        25% {
           transform: none;
         }
         50% {
