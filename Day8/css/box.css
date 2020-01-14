@@ -1,0 +1,69 @@
+.box__name {
+  font-weight: 700;
+  position: relative;
+  bottom: 20px;
+}
+.box2__name {
+  font-weight: 700;
+  position: relative;
+  bottom: 50px;
+  left: 80px;
+}
+
+.box__price {
+  font-weight: 700;
+  margin-right: 110px;
+}
+.box__content {
+  font-weight: 400;
+  opacity: 0.6;
+  position: relative;
+  bottom: 10px;
+}
+.box2__content {
+  font-weight: 400;
+  opacity: 0.6;
+  position: relative;
+  bottom: 40px;
+  left: 110px;
+}
+.box2__bottom {
+  position: flex;
+  justify-content: space-between;
+}
+.box {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 45px / 45px;
+  margin-bottom: 10px;
+  height: 340px;
+  width: 300px;
+  margin: 20px;
+  background-color: white;
+}
+.box2 {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 45px / 45px;
+  height: 290px;
+  width: 300px;
+  margin: 20px;
+  background-color: white;
+  flex-direction: row;
+  align-items: center;
+}
+.box2__btn1 {
+  background-color: #6b75ff;
+  color: #eaecff;
+  border-radius: 5px;
+}
+.box2__btn2 {
+  background-color: #eaecff;
+  color: #6b75ff;
+  border-radius: 5px;
+}
+.box2__btns {
+  position: relative;
+  left: 80px;
+  bottom: 10px;
+}

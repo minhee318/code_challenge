@@ -1,0 +1,10 @@
+@import "reset.css";
+@import "box.css";
+@import "img.css";
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700&display=swap");
+.background {
+  background-color: black;
+  position: flex;
+  flex-direction: column;
+  padding: 10px;
+}

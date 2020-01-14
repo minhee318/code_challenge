@@ -1,0 +1,23 @@
+.box__pic {
+  height: 240px;
+  width: 300px;
+}
+.box2__back {
+  border-radius: 45px 45px 0px 0px;
+  width: 340px;
+  height: 100px;
+
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+}
+.box2__profile {
+  border-radius: 80px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  position: relative;
+  z-index: 1;
+  left: 90px;
+  bottom: 60px;
+}
