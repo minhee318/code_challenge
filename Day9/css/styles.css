@@ -18,7 +18,7 @@ a {
   height: 600px;
   border-radius: 70px;
   padding: 30px;
-  border: 1px solid #f8f8f8;
+  border: 1px solid #f8f6ff;
   box-shadow: 10px 10px 10px 10px #bac1cc;
 }
 header,
@@ -44,7 +44,7 @@ header {
   width: 240px;
   border-color: white;
   height: 30px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .forgot {
   margin-bottom: 15px;
@@ -69,7 +69,7 @@ header {
 .btn1 {
   background-color: red;
   width: 200px;
-
+  border-radius: 20px;
   margin-bottom: 30px;
   position: relative;
   left: 15px;
@@ -79,22 +79,17 @@ header {
   color: white;
   height: 35px;
   text-align: center;
-  border-radius: 20px;
-}
-.btn2 {
-  position: flex;
-  justify-content: space-between;
-  /* margin-bottom: 40px; */
-  /* width: 110px; */
-}
-.face,
-.twit {
-  width: 110px;
-  border-radius: 20px;
-  padding: 10px;
 }
 
-.sign {
+.face,
+.twit {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.sign,
+.face,
+.twit {
   font-size: 10px;
 }
 .sign {
@@ -106,8 +101,6 @@ header {
 }
 .twit {
   background-color: #5da1f2;
-  width: 110px;
-  height: 35px;
 }
 .bottom {
   margin-bottom: 10px;
