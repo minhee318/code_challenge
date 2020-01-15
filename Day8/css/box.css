@@ -64,6 +64,7 @@
 }
 .box2__btns {
   position: relative;
-  left: 80px;
+  left: 50px;
   bottom: 10px;
+  font-size: 30px;
 }
