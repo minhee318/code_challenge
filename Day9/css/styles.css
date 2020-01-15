@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+@import "reset.css";
+
+body {
+  background-color: #f8f6ff;
+  padding: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.box {
+  background-color: #f8f8f8;
+  width: 300px;
+  height: 600px;
+  border-radius: 70px;
+  padding: 30px;
+  border: 1px solid #f8f8f8;
+  box-shadow: 10px 10px 10px 10px #bac1cc;
+}
+header,
+p {
+  font-weight: bold;
+}
+p {
+  margin-bottom: 30px;
+}
+header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.text__email {
+  margin-bottom: 20px;
+}
+
+.text__password {
+  margin-bottom: 15px;
+}
+.text__email,
+.text__password {
+  width: 240px;
+  border-color: white;
+  height: 30px;
+  border-radius: 5px;
+}
+.forgot {
+  margin-bottom: 15px;
+
+  text-align: right;
+}
+.remember,
+.need,
+.your {
+  opacity: 0.5;
+}
+.up,
+.retrive,
+.forgot {
+  color: red;
+  font-size: 12px;
+}
+.remember {
+  margin-bottom: 50px;
+  font-size: 12px;
+}
+.btn1 {
+  background-color: red;
+  width: 200px;
+
+  margin-bottom: 30px;
+  position: relative;
+  left: 15px;
+}
+.btn1,
+.btn2 {
+  color: white;
+  height: 35px;
+  text-align: center;
+  border-radius: 20px;
+}
+.btn2 {
+  position: flex;
+  justify-content: space-between;
+  /* margin-bottom: 40px; */
+  /* width: 110px; */
+}
+.face,
+.twit {
+  width: 110px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.sign {
+  font-size: 10px;
+}
+.sign {
+  position: relative;
+  top: 5px;
+}
+.face {
+  background-color: #475a95;
+}
+.twit {
+  background-color: #5da1f2;
+  width: 110px;
+  height: 35px;
+}
+.bottom {
+  margin-bottom: 10px;
+}
+footer {
+  font-size: 10px;
+  margin-top: 40px;
+}
