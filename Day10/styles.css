@@ -1,0 +1,140 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-weight: 700;
+  background-color: #e7e8ec;
+}
+
+.screen {
+  width: 380px;
+  height: 820px;
+  border-radius: 30px;
+  padding: 20px 30px;
+  background-color: pink;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  margin-bottom: 200px;
+}
+.boxs {
+  display: flex;
+  margin-left: 85px;
+  margin-bottom: 30px;
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  background-color: red;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.box4 {
+  color: white;
+  padding: 10px;
+}
+.tags {
+  display: flex;
+  margin-bottom: 20px;
+}
+.tag1,
+.tag2,
+.tag3 {
+  color: blue;
+  padding: 5px;
+  font-size: 10px;
+  margin-right: 10px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px 10px 10px 0px;
+  background-color: aqua;
+  text-align: center;
+}
+.header__name {
+  font-weight: 700;
+  font-size: 30px;
+}
+.header__icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__icon i {
+  color: purple;
+}
+.location {
+  margin-top: 10px;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+.location i {
+  color: blue;
+}
+.score-high {
+  display: flex;
+}
+.score__icon {
+  color: yellow;
+}
+.score {
+  margin-right: 120px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+.overview {
+  opacity: 0.6;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.content {
+  margin-bottom: 20px;
+}
+.readmore {
+  color: blue;
+  font-size: 20px;
+  margin-top: 20;
+  margin-bottom: 50px;
+}
+.underbar {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid palevioletred;
+  font-size: 20px;
+  padding: 30px;
+  opacity: 0.7;
+}
+
+.underbar__icon:nth-child(2) {
+  color: blue;
+}
+.underbar__icon:nth-child(3) {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  position: relative;
+  bottom: 60px;
+}
+.underbar__icon:nth-child(3) i {
+  position: relative;
+  left: 17px;
+  top: 15px;
+}
