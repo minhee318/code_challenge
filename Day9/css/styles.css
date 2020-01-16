@@ -18,8 +18,9 @@ a {
   height: 600px;
   border-radius: 70px;
   padding: 30px;
-  border: 1px solid #f8f6ff;
-  box-shadow: 10px 10px 10px 10px #bac1cc;
+
+  box-shadow: inset -6px -6px 15px rgba(145, 160, 180, 0.45),
+    30px 30px 40px rgba(118, 146, 180, 0.18);
 }
 header,
 p {
@@ -32,6 +33,19 @@ header {
   margin-bottom: 60px;
   text-align: center;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.text__email,
+.text__password {
+  all: unset;
+  background-color: white;
+  border: 1px solid rgba(211, 211, 211, 0.3);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 10px;
+}
 .text__email {
   margin-bottom: 20px;
 }
@@ -39,16 +53,9 @@ header {
 .text__password {
   margin-bottom: 15px;
 }
-.text__email,
-.text__password {
-  width: 240px;
-  border-color: white;
-  height: 30px;
-  border-radius: 8px;
-}
+
 .forgot {
   margin-bottom: 15px;
-
   text-align: right;
 }
 .remember,
@@ -85,6 +92,10 @@ header {
 .twit {
   padding: 10px;
   border-radius: 20px;
+  width: 100%;
+}
+.btn2 {
+  display: flex;
 }
 
 .sign,
@@ -98,6 +109,7 @@ header {
 }
 .face {
   background-color: #475a95;
+  margin-right: 15px;
 }
 .twit {
   background-color: #5da1f2;
