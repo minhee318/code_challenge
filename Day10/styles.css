@@ -7,6 +7,8 @@
 body {
   font-weight: 700;
   background-color: #e7e8ec;
+  display: flex;
+  justify-content: center;
 }
 
 .screen {
@@ -14,9 +16,12 @@ body {
   height: 820px;
   border-radius: 30px;
   padding: 20px 30px;
-  background-color: pink;
+  background: linear-gradient(rgba(241, 242, 246, 0.2), rgb(241, 242, 246) 75%),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Oia,_Santorini_HDR_sunset.jpg/1280px-Oia,_Santorini_HDR_sunset.jpg");
+  background-size: cover;
+  background-position: center;
 }
-header {
+.header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
@@ -29,18 +34,24 @@ header {
 }
 .boxs {
   display: flex;
-  margin-left: 85px;
+  justify-content: flex-end;
+
   margin-bottom: 30px;
 }
 .box1,
 .box2,
-.box3,
-.box4 {
+.box3 {
   background-color: red;
   border-radius: 10px;
   width: 40px;
   height: 40px;
   margin-right: 10px;
+}
+.box4 {
+  background-color: red;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
 }
 .box4 {
   color: white;
@@ -57,17 +68,23 @@ header {
   padding: 5px;
   font-size: 10px;
   margin-right: 10px;
-  width: 80px;
-  height: 30px;
+  height: 25px;
   border-radius: 10px 10px 10px 0px;
   background-color: aqua;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.header__name {
+.header2 {
+  display: flex;
+  justify-content: space-between;
+}
+.header2__name {
   font-weight: 700;
   font-size: 30px;
 }
-.header__icon {
+.header2__icon {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -76,11 +93,11 @@ header {
   justify-content: center;
   align-items: center;
 }
-.header__icon i {
+.header2__icon i {
   color: purple;
 }
 .location {
-  margin-top: 10px;
+  margin-top: 15px;
   opacity: 0.6;
   margin-bottom: 20px;
 }
@@ -113,9 +130,18 @@ header {
   margin-bottom: 50px;
 }
 .underbar {
+  position: relative;
+  width: 380px;
+  height: 80px;
+  background-color: darksalmon;
+  border-radius: 0px 0px 30px 30px;
+  top: 32px;
+  right: 30px;
+}
+.underbar__list {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid palevioletred;
+  border-top: 3px solid palevioletred;
   font-size: 20px;
   padding: 30px;
   opacity: 0.7;
