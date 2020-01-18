@@ -1,0 +1,139 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Bangers|Lobster&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  width: 330px;
+  height: 690px;
+  padding: 10px;
+}
+.screen {
+  height: 100%;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+  border: 10px solid #2799fa;
+}
+.screen:after {
+  width: 100%;
+  height: 100%;
+  background: url("img/profile.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3 !important;
+  filter: alpha(opacity=30);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.startbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+.startbar__timestamp {
+  padding-left: 5px;
+}
+.startbar__icon {
+  position: relative;
+  left: 10px;
+}
+.upperbtn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 130px;
+}
+.upperbtn i {
+  opacity: 0.5;
+}
+
+.upperbtn__title {
+  font-size: 13px;
+  opacity: 0.7;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile__pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.profile__name {
+  font-family: Bangers;
+  margin-bottom: 15px;
+  color: #2799fa;
+}
+.profile__country {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+.midbtn {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+}
+.midbtn__follow,
+.midbtn__message {
+  height: 45px;
+  width: 130px;
+  border-radius: 10px;
+  background-color: #2799fa;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.midbtn__follow {
+  background-color: beige;
+  color: black;
+  opacity: 0.7;
+  margin-right: 5px;
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 130px;
+}
+.info__num {
+  text-align: center;
+}
+
+.underbar__list {
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  opacity: 0.5;
+}
+.underbar__icon:first-child {
+  color: blue;
+}
+.underbar__icon {
+  padding-bottom: 20px;
+}
+.underline {
+  width: 80px;
+  border-bottom: 4px solid gray;
+  position: relative;
+  left: 84px;
+}
