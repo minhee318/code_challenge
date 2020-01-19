@@ -1,0 +1,32 @@
+@import "reset.css";
+body {
+}
+.box {
+  background-color: pink;
+
+  height: 300px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.inner-box {
+  background-color: greenyellow;
+  width: 200px;
+  height: 150px;
+}
+.inner-box:first-child:hover {
+  background-color: black;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  left:10px;
+  top:10px:
+}
+.inner-box:last-child:hover{
+    width:100px;
+    height:75px;
+    margin-top:5px;
+    background-color: black;
+}
