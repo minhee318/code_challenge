@@ -1,22 +1,32 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 body {
   background-color: #f8f7ff;
-  font-size: 10px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 40px;
 }
 .phone {
-  width: 300px;
-  height: 600px;
+  width: 340px;
+  height: 700px;
   border-radius: 30px;
   background-color: white;
   box-shadow: inset -6px -6px 15px rgba(145, 160, 180, 0.45),
     30px 30px 40px rgba(118, 146, 180, 0.18);
-  padding: 40px 30px;
+  padding: 10px 20px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .screen {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 600px;
+  border-radius: 30px 30px 0px 0px;
+  box-shadow: inset -6px -6px 15px rgba(145, 160, 180, 0.45);
+  padding: 30px 20px;
 }
 .header {
   display: flex;
@@ -36,66 +46,68 @@ body {
 .box1,
 .box2 {
   display: flex;
+  justify-content: center;
+}
+.box1__box:first-child,
+.box2__box:first-child {
+  margin-right: 10px;
+}
+.box1__box,
+.box2__box {
   background-color: blue;
-  width: 115px;
+  width: 130px;
   height: 80px;
   border-radius: 20px;
-}
-.box1__box1,
-.box1__box2,
-.box2__box1,
-.box2__box2 {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .recipes .recipes__title {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
   font-size: 10px;
 }
 .recipe {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.recipe__one,
-.recipe__two,
-.recipe__three,
-.recipe__four {
-  width: 240px;
-  height: 50px;
-  border-radius: 30px;
+.recipe__title {
+  width: 100%;
+
+  border-radius: 10px;
   background-color: pink;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
 }
 .recipe__name {
-  font-size: 8px;
+  font-size: 10px;
   margin-bottom: 5px;
 }
 .recipe__num {
-  font-size: 6px;
+  font-size: 8px;
   opacity: 0.6;
 }
 .recipes i {
   color: red;
 }
 .underbar {
-  width: 100%;
-  height: 70px;
-  display: flex;
-
-  position: relative;
-  background-color: deeppink;
-
-  border-radius: 0 0 30px 30px;
-  top: 10px;
-  right: 20px;
+  width: 300px;
 }
 .underbar__list {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
+  padding-top: 30px;
+}
+.underbar__icon:nth-child(2) {
+  color: red;
 }

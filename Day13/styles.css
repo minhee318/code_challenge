@@ -1,32 +1,62 @@
 @import "reset.css";
-body {
-}
+
 .box {
   background-color: pink;
-
   height: 300px;
   margin-bottom: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
 }
 .inner-box {
   background-color: greenyellow;
   width: 200px;
   height: 150px;
 }
-.inner-box:first-child:hover {
+
+.box1__fixed-box {
+  background-color: greenyellow;
+  width: 200px;
+  height: 150px;
+}
+.box3__fixed-box {
   background-color: black;
   width: 200px;
   height: 150px;
-  position: relative;
-  left:10px;
-  top:10px:
 }
-.inner-box:last-child:hover{
-    width:100px;
-    height:75px;
-    margin-top:5px;
-    background-color: black;
+
+.box1__inner-box:hover {
+  transform: translate(10px, 10px);
+  background-color: black;
+}
+.box1__inner-box {
+  position: absolute;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.box2__inner-box {
+  position: absolute;
+  z-index: 1;
+  transition: transform 0.5s ease-in-out;
+}
+
+.box2__upper-box {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  position: relative;
+  top: 50px;
+}
+
+.box2__inner-box:hover {
+  transform: scaleY(0.67) translateY(-35px);
+}
+
+.box3__inner-box {
+  position: absolute;
+  z-index: 1;
+  transition: transform 0.5s ease-in-out;
+}
+.box3__inner-box:hover {
+  transform: scale(0.3) translateY(-50px);
 }
